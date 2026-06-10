@@ -1,34 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabs</title>
+    <title>Tab</title>
     <link rel="stylesheet" href="tab.css">
 </head>
 
 <body>
     <div class="container">
         <div class="tab-buttons">
-            <button class="tab-button active" data-tab="tab-1">First Tab</button>
-            <button class="tab-button" data-tab="tab-2">Second Tab</button>
-            <button class="tab-button" data-tab="tab-3">Third Tab</button>
-            <button class="tab-button" data-tab="tab-4">Fourth Tab</button>
+            <button class="active" onclick="showTab(1)">Tab 1</button>
+            <button onclick="showTab(2)">Tab 2</button>
+            <button onclick="showTab(3)">Tab 3</button>
+            <button onclick="showTab(4)">Tab 4</button>
         </div>
 
-        <div id="tab1" class="tab-content active">
-            First Tab content to be displayed here.
-        </div>
-        <div id="tab1" class="tab-content">
-            Second Tab content to be displayed here.
-        </div>
-        <div id="tab1" class="tab-content">
-            Third Tab content to be displayed here.
-        </div>
-        <div id="tab1" class="tab-content">
-            Fourth Tab content to be displayed here.
-        </div>
+        <div id="content1" class="content show">Content 1 is displayed here.</div>
+        <div id="content2" class="content">Content 2 is displayed here.</div>
+        <div id="content3" class="content">Content 3 is displayed here.</div>
+        <div id="content4" class="content">Content 4 is displayed here.</div>
     </div>
     <script src="tab.js"></script>
 </body>
